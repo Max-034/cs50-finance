@@ -1,0 +1,65 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+/* CSS class for centering and styling the table */
+.centered-table {
+    margin: auto; /* Center the table horizontally */
+    width: 50%; /* Set a width for the table */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+    font-family: Arial, sans-serif; /* Choose a font family */
+    margin-bottom: 35px;
+}
+
+.centered-table th, .centered-table td {
+    border: 1px solid #dddddd; /* Add borders to table cells */
+    padding: 8px; /* Add padding for cell content */
+    text-align: left; /* Align text to the left */
+}
+
+.centered-table th {
+    background-color: #f2f2f2; /* Set a background color for header cells */
+
+}
+.custom-select {
+    padding: 16px; /* Add padding for a larger appearance */
+    font-size: 22px; /* Set the font size */
+    border: 1px solid #ccc; /* Add a border for a cleaner look */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    margin-bottom: 20px;
+
+}
+
+/* Optional: Style the label for better aesthetics */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.table-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
