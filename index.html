@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+
+<table border="5" class="centered-table" >
+    <tr>
+        <th>Stocks</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Holdings</th>
+    </tr>
+    {% for item in p %}
+
+    <tr>
+        <td>
+            {{item['symbol']}}
+        </td>
+        <td>
+            {{item['total_quantity']}}
+        </td>
+        <td>
+            {{item['price']}}
+        </td>
+        <td>
+            {{item['holdings']}}
+        </td>
+
+
+    </tr>
+    {% endfor %}
+
+
+
+</table>
+
+{% endblock %}
+
+

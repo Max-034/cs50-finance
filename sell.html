@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+
+
+
+
+
+    <form action="/sell" method="post">
+
+        <div>
+            <label for="cars">STOCK:</label>
+
+<!-- Select menu with options -->
+<select id="car" name="car" class="custom-select">
+    <option value="" disabled selected>Select</option>
+    {% for item in p %}
+    <option value = "{{item['symbol']}}">{{item['symbol']}}</option>
+    {% endfor %}
+
+</select>
+
+</div>
+
+<div class="mb-3">
+    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="sell" name="sell" placeholder="Quantity" type="text">
+</div>
+
+        <button class="btn btn-primary" type="submit">Confirm</button>
+    </form>
+{% endblock %}

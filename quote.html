@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="q" name="symbol" placeholder="Symbol" type="text">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Enter</button>
+    </form>
+    <p class = "table-title"> <a href = "https://stockanalysis.com/stocks/"> Click on this link for info about stocks and their symbols</p>
+{% endblock %}

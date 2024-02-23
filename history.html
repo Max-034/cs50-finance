@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+<p class = "table-title" >BUY</p>
+   <table border="5" class="centered-table" >
+    <tr>
+        <th>Stocks</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Date & Time</th>
+    </tr>
+    {% for item in q %}
+
+    <tr>
+        <td>
+            {{item['symbol']}}
+        </td>
+        <td>
+            {{item['quantity']}}
+        </td>
+        <td>
+            {{item['price']}}
+        </td>
+        <td>
+            {{item['time']}}
+        </td>
+
+
+    </tr>
+    {% endfor %}
+
+
+
+</table>
+<p class = "table-title">SELL</p>
+
+<table border="5" class="centered-table" >
+
+    <tr>
+        <th>Stocks</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Date & Time</th>
+    </tr>
+    {% for item in r %}
+
+    <tr>
+        <td>
+            {{item['symbol']}}
+        </td>
+        <td>
+            {{item['quantity']*-1}}
+        </td>
+        <td>
+            {{item['price']}}
+        </td>
+        <td>
+            {{item['time']}}
+        </td>
+
+
+    </tr>
+    {% endfor %}
+
+
+
+</table>
+{% endblock %}
